@@ -1,0 +1,3 @@
+{
+    "python.analysis.extraPaths": ["./Main/Test", "./Method/Utility","./Method/Custom_Selenium","./Main"]
+}

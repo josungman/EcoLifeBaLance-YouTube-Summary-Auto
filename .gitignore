@@ -1,0 +1,7 @@
+GPT_key.txt
+DB_Connecting_Info.txt
+WJ_Account.txt
+Youtube_key.txt
+*.exe
+build/Youtube_Video_Summary/Youtube_Video_Summary.pkg
+build/Youtube_Video_Summary/PYZ-00.pyz

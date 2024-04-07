@@ -1,0 +1,76 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<div id="player"></div>
+<span class="Youtube_Id" youtube_id="VJ91iTRXiGQ"></span>
+<div id="timestampYT">
+  <div class="lien" id="60"><a href="#">Passer à 10 sec</a></div>
+  <div class="lien" id="100"><a href="#">Passer à 20 sec</a></div>
+  <div class="lien" id="01:02:36"><a href="#">Passer à 30 sec</a></div>
+</div>
+
+
+<style>
+/* Youtube Timestamp*/
+html{
+font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+    font-size: 14px;
+}
+#timestampYT{
+  margin: 30px;
+}
+.lien{
+  margin : 10px;
+}
+</style>
+
+
+<script>
+var vid = $('.Youtube_Id').attr('youtube_id');
+
+$(".lien").click(function () {
+  // ID 값으로부터 타임스탬프(초)를 직접 가져옵니다.
+  var timestampYT = Number(this.id); // '초' 단위로 바로 변환
+  seekTime(timestampYT);
+});
+
+// This code loads the IFrame Player API code asynchronously.
+var tag = document.createElement("script");
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName("script")[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// This function creates an <iframe> (and YouTube player)
+// after the API code downloads.
+var player;
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player("player", {
+    width: "100%",
+    videoId: vid,
+    events: {
+      onReady: onPlayerReady,
+      onStateChange: onPlayerStateChange
+    }
+  });
+}
+
+// The API will call this function when the video player is ready.
+function onPlayerReady(event) {
+  //event.target.playVideo();
+}
+
+// 이 함수는 특정 시간(초)으로 동영상을 이동시킵니다.
+function seekTime(seconds) {
+  player.seekTo(seconds, true);
+}
+
+// The API calls this function when the player's state changes.
+var done = false;
+function onPlayerStateChange(event) {
+  // 상태 변경시 수행할 작업을 여기에 추가할 수 있습니다.
+}
+function stopVideo() {
+  player.stopVideo();
+}
+</script>

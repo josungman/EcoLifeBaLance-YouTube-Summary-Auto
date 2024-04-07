@@ -1,0 +1,22 @@
+[
+   {
+    "title": "클린어밴져스",
+    "channel_url": "https://www.youtube.com/channel/UCBcm-pxUmI5CUnhZSMGbvWQ"
+  },
+  {
+    "title": "매직청소TV",
+    "channel_url": "https://www.youtube.com/channel/UCNBSDr1Sq-y7DW-LPnsZZwA"
+  },
+  {
+    "title": "정리왕",
+    "channel_url": "https://www.youtube.com/channel/UCmErD4mBSQUUIxHFB8RTJLA"
+  },
+  {
+    "title": "우정",
+    "channel_url": "https://www.youtube.com/channel/UCx3R_KdwgaqCaEmaRAe_NOg"
+  },
+ {
+    "title": "sbs뉴스",
+    "channel_url": "https://www.youtube.com/channel/UCkinYTS9IHqOEwR1Sze2JTw"
+  }
+]

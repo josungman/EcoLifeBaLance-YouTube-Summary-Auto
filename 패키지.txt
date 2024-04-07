@@ -1,0 +1,1 @@
+pyinstaller --onefile --console -n Youtube_Video_Summary --add-data "C:\Users\SungmanCho\AppData\Local\Programs\Python\Python311\Lib\site-packages\autoit\lib\AutoItX3_x64.dll;./autoit/lib" Main/Auto_Main_job.py
