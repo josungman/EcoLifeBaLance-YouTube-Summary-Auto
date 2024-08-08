@@ -5,3 +5,6 @@ Youtube_key.txt
 *.exe
 build/Youtube_Video_Summary/Youtube_Video_Summary.pkg
 build/Youtube_Video_Summary/PYZ-00.pyz
+Logs
+*.pyc
+Method/Commom_DB/__pycache__
